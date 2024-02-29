@@ -1,0 +1,11 @@
+package core;
+class a{
+	public void run() {
+		System.out.println("run function");
+	}
+}
+public class P002_UserInput {
+	public static void main(String[] args) {
+		 
+	}
+}

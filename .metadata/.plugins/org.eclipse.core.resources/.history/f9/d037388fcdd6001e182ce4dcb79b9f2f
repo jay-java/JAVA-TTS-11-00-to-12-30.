@@ -1,0 +1,10 @@
+package core;
+
+public class P001_DataType {
+	public static void main(String[] args) {
+		byte b = 12;
+		short s = 12;
+		int i = 12;
+		long l = 12;
+	}
+}
