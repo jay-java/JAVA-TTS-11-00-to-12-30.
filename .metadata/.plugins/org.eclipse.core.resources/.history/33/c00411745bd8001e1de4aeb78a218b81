@@ -1,0 +1,7 @@
+package core;
+
+public class P004_ConditionalStatemnt {
+	public static void main(String[] args) {
+		
+	}
+}

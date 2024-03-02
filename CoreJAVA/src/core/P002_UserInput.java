@@ -18,5 +18,9 @@ public class P002_UserInput {
 		System.out.println("enter d = ");
 		double d = sc.nextDouble();
 		System.out.println("d = "+d);
+		System.out.println("enter name : ");
+		String name = sc.next();
+		System.out.println(name);
+		
 	}
 }
