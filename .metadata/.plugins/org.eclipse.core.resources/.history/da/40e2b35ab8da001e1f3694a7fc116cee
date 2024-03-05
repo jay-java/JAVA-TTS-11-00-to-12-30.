@@ -1,0 +1,16 @@
+package core;
+
+//***
+//***
+//***
+public class P006_Pattern {
+	public static void main(String[] args) {
+		//row
+		for(int i=1;i<=3;i++) {
+			//column
+			for() {
+				
+			}
+		}
+	}
+}
