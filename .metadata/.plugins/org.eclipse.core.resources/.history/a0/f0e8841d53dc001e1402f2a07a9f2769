@@ -1,0 +1,14 @@
+package core;
+class User{
+	int id;
+	String name;
+	double salary;
+	public void setId(int id) {
+		
+	}
+}
+public class P009_Constructor {
+	public static void main(String[] args) {
+		
+	}
+}

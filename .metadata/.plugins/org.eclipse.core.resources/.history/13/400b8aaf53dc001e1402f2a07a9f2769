@@ -1,0 +1,39 @@
+package core;
+class User{
+	int id;
+	String name;
+	double salary;
+	public void setId(int id) {
+		System.out.println("id : "+id);
+	}
+	public int getId() {
+		return id;
+	}
+	public void setName(String name) {
+		System.out.println("name : "+name);
+	}
+	public String getName() {
+		return name;
+	}
+	public void setSalary(double salary) {
+		System.out.println("sal : "+salary);
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void printData() {
+		System.out.println("id : "+id+" name : "+name+" salary : "+salry);
+	}
+	
+}
+public class P009_Constructor {
+	public static void main(String[] args) {
+		User u1 = new User();
+		u1.setId(1);
+		u1.setName("java");
+		u1.setSalary(200000);
+//		System.out.println(u1.getId());
+//		System.out.println(u1.getName());
+//		System.out.println(u1.getSalary());
+	}
+}

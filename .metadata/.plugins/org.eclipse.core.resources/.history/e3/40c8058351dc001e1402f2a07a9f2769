@@ -1,0 +1,10 @@
+package core;
+class AAA{
+	public void call() {
+		System.out.println("call");
+	}
+}
+public class P009_Constructor {
+	public static void main(String[] args) {
+	}
+}
