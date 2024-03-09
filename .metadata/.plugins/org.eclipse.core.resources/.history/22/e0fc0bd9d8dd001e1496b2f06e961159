@@ -1,0 +1,21 @@
+package core;
+class A{
+	public void classA() {
+		System.out.println("class A");
+	}
+}
+class B{
+	public void classB() {
+		System.out.println("class B");
+	}
+}
+class C{
+	public void classC() {
+		System.out.println("class C");
+	}
+}
+public class P010_Inheritance {
+	public static void main(String[] args) {
+		
+	}
+}

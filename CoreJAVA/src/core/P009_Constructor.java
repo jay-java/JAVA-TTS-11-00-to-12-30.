@@ -36,6 +36,11 @@ class User{
 	public void printData() {
 		System.out.println("id : "+id+" name : "+name+" salary : "+salary);
 	}
+	User(User u4){
+		this.id = u4.id;
+		this.name = u4.name;
+		this.salary = u4.salary;
+	}
 	
 }
 public class P009_Constructor {
@@ -44,6 +49,8 @@ public class P009_Constructor {
 		User u2 = new User();
 		User u3 = new User();
 		User u4 = new User(2, "python", 300.0);
+		User u5 = new User(u4);
+		u5.printData();
 		u4.printData();
 		u1.setId(1);
 		u1.setName("java");
