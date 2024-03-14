@@ -1,0 +1,27 @@
+package core;
+interface inter1{
+	public void fun1();
+	public static void staticinte1() {
+		System.out.println("static in interface 1");
+	}
+}
+interface inte2 extends inter1{
+	public void fun2();
+	public static void staticinte2() {
+		System.out.println("static in interface 2");
+	}
+}
+interface inter3{
+	public void fun3();
+	public static void staticinte3() {
+		System.out.println("static in interface 3");
+	}
+}
+class InterCall implements inter2,inter3{
+	
+}
+public class P015_Interface {
+	public static void main(String[] args) {
+		
+	}
+}

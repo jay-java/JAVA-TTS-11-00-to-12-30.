@@ -1,0 +1,20 @@
+package core;
+interface inter1{
+	public void fun1() {
+		
+	}
+}
+interface inte2{
+	
+}
+interface inter3{
+	
+}
+class InterCall{
+	
+}
+public class P015_Interface {
+	public static void main(String[] args) {
+		
+	}
+}
