@@ -1,0 +1,17 @@
+package core;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class P018_FileHandling {
+	public static void main(String[] args) throws IOException {
+		String s = "this msg will store into file";
+		FileOutputStream fos = new FileOutputStream("t1.txt");
+		byte b[] = s.getBytes();
+		fos.write(b);
+		fos.flush();
+		fos.close();
+		System.out.println("file written succssfully");
+	}
+}
