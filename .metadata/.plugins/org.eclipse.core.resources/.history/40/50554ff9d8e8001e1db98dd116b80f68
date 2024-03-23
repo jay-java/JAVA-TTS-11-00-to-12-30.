@@ -1,0 +1,18 @@
+package core;
+class UserDetails{
+	private int id;
+	private String name;
+	private String address;
+	private long contact;
+	UserDetails(int id,String name,String address,long contact){
+		this.id = id;
+		this.name=name;
+		this.address =address;
+		this.contact = contact;
+	}
+}
+public class P019_Serailization {
+	public static void main(String[] args) {
+		
+	}
+}

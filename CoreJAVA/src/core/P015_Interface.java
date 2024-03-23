@@ -19,11 +19,7 @@ interface inter3{
 }
 class InterCall implements inter2,inter3{
 
-	@Override
-	public void fun1() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	@Override
 	public void fun3() {
@@ -33,6 +29,12 @@ class InterCall implements inter2,inter3{
 
 	@Override
 	public void fun2() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fun1() {
 		// TODO Auto-generated method stub
 		
 	}

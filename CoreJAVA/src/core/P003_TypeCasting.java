@@ -13,7 +13,12 @@ public class P003_TypeCasting {
 		System.out.println("c = "+c);
 		int i =(int)23.1;
 		System.out.println(i);
+		String iString  = String.valueOf(i);
 		double d = 3;
 		System.out.println(d);
+		String s = "12";
+		int l = Integer.parseInt(s);
+		System.out.println(l);
+		
 	}
 }
