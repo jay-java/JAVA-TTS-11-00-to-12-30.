@@ -1,0 +1,18 @@
+package core;
+
+import java.util.ArrayList;
+import java.util.List;
+//<generics>
+public class P021_List {
+	public static void main(String[] args) {
+		List list = new ArrayList();
+		list.add(12);
+		list.add("java");
+		list.add('g');
+		list.add(234.33);
+		list.add(false);
+		list.add(122354);
+		System.out.println(list);
+		
+	}
+}
