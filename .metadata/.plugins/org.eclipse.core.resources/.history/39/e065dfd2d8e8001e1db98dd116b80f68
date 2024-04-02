@@ -1,9 +1,0 @@
-package core;
-class UserDetails{
-	
-}
-public class P019_Serailization {
-	public static void main(String[] args) {
-		
-	}
-}
