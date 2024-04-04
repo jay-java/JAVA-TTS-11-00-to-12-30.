@@ -1,0 +1,17 @@
+class SwingDemo->cons
+frame->label,textfield,button
+implements ActionListener
+public void actionPerformed{
+b1->insert
+b2->serach
+
+}
+b1.addActionListener(this);
+b2.addActionListener(this);
+b3.addActionListener(this);
+b4.addActionListener(this);
+
+add jar file
+
+create database connectino (function)
+
