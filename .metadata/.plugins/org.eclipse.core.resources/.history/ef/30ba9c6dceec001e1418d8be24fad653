@@ -1,7 +1,0 @@
-package core;
-
-public class P024_Vectorr {
-	public static void main(String[] args) {
-		
-	}
-}

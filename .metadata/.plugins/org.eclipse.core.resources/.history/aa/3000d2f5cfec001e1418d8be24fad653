@@ -1,7 +1,0 @@
-package core;
-
-public class P023_Set {
-	public static void main(String[] args) {
-		
-	}
-}
