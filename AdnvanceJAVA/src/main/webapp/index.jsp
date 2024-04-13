@@ -8,6 +8,13 @@
 </head>
 <body>
 	<h1>Hello index page</h1>
+	<%-- <% scriplets %> --%>
+	<%
+	 String msg = (String)request.getAttribute("msg");
+	%>
+	<%if(msg!=null){ %>
+	<h3><%out.print(msg); %></h3>
+	<%} %>
 	<form action="UserController" method="post">
 		<table>
 			<tr>
