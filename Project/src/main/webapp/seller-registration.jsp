@@ -33,10 +33,20 @@
 					<div class="col-12">
 						<h2 class="contact-title">Seller Registration</h2>
 					</div>
+					<%
+					String msg = (String)request.getAttribute("msg");
+					if(msg!=null){
+						%>
+						<div class="col-12">
+						<h4 class="contact-title"><%out.print(msg);%></h4>
+					</div>
+						<%
+					}
+					%>
 					<div class="col-lg-8">
-						<form class="form-contact contact_form"
-							action="https://preview.colorlib.com/theme/capitalshop/contact_process.php"
-							method="post" id="contactForm" novalidate="novalidate">
+						<form 
+							action="SellerController"
+							method="post">
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
@@ -81,7 +91,7 @@
 							</div>
 							<div class="form-group mt-3">
 								<button type="submit"
-									class="button button-contactForm boxed-btn">Register</button>
+									class="button button-contactForm boxed-btn" name="action" value="register">Register</button>
 							</div>
 						</form>
 					</div>

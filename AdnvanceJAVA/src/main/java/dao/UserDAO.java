@@ -54,7 +54,7 @@ public class UserDAO {
 			if(rs.next()) {
 				u1 = new User();
 				u1.setId(rs.getInt("id"));
-				u1.setName(rs.getString("name"));
+//				u1.setName(rs.getString("name"));
 				u1.setContact(rs.getLong("contact"));
 				u1.setAddress(rs.getString("address"));
 				u1.setEmail(rs.getString("email"));
@@ -76,7 +76,7 @@ public class UserDAO {
 			while(rs.next()) {
 				User u = new User();
 				u.setId(rs.getInt("id"));
-				u.setName(rs.getString("name"));
+//				u.setName(rs.getString("name"));
 				u.setContact(rs.getLong("contact"));
 				u.setAddress(rs.getString("address"));
 				u.setEmail(rs.getString("email"));
