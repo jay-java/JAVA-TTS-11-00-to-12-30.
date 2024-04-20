@@ -40,6 +40,9 @@
 							</div>
 						</form>
 					</div>
+					<div class="form-group mt-3">
+						<h2><a href="seller-forgot-pass.jsp">Forgot Password ?</a></h2>
+					</div>
 				</div>
 </body>
 </html>

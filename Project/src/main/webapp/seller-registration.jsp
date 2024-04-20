@@ -43,6 +43,7 @@
 						<%
 					}
 					%>
+				
 					<div class="col-lg-8">
 						<form 
 							action="SellerController"
