@@ -101,8 +101,8 @@ else{
 									<li><a href="seller-home.jsp">Home</a></li>
 									<li><a href="blog.html">Products</a>
 										<ul class="submenu">
-											<li><a href="seller-login.jsp">Upload Product</a></li>
-											<li><a href="customer-login.jsp">Manage Product</a></li>
+											<li><a href="upload-product.jsp">Upload Product</a></li>
+											<li><a href="manage-product.jsp">Manage Product</a></li>
 										</ul></li>
 									<li><a href="blog.html"><%=s.getName() %></a>
 										<ul class="submenu">
