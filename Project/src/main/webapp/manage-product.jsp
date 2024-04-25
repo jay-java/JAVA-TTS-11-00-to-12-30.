@@ -51,8 +51,8 @@
 									<td>
 										<h5><%=p.getPdesc() %></h5>
 									</td>
-									<td><a class="btn" href="#">Edit</a></td>
-									<td><a class="btn" href="#">Delete</a></td>
+									<td><a class="btn" href="seller-single-product.jsp?id=<%=p.getPid()%>">Edit</a></td>
+									<td><a class="btn" href="seller-delete-product.jsp?id=<%=p.getPid()%>">Delete</a></td>
 								</tr>
 								<%} %>
 								
