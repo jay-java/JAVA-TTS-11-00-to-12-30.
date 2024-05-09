@@ -43,4 +43,33 @@ public class WishLIstDAO {
 		}
 		return list;
 	}
+	public static void removeItem(int wid) {
+		try {
+			Connection conn = DBConnection.driverConnection();
+			String sql = "delete from wishlist where wid=?";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setInt(1, wid);
+			pst.executeUpdate();
+			System.out.println("removed");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public static boolean checkWishList(int pid,int cusid) {
+		boolean flag = false;
+		try {
+			Connection conn = DBConnection.driverConnection();
+			String sql = "select * from wishlist where cusid=? and pid=?";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setInt(1, cusid);
+			pst.setInt(2, pid);
+			ResultSet rs = pst.executeQuery();
+			if(rs.next()) {
+				flag = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return flag;
+	}
 }

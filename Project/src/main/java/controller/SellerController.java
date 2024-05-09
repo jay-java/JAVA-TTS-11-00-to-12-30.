@@ -50,7 +50,7 @@ public class SellerController extends HttpServlet {
 			boolean flag = SellerDAO.checkEmail(email);
 			if(flag == false){
 				SellerDAO.insertSeller(s);
-				response.sendRedirect("seller-home.jsp");
+				response.sendRedirect("seller-login.jsp");
 			}
 			else {
 				request.setAttribute("msg", "account already registered");
