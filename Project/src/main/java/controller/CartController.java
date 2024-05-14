@@ -41,6 +41,7 @@ public class CartController extends HttpServlet {
 			c.setQty(1);
 			c.setPprice(p.getPprice());
 			c.setTotal_price(p.getPprice());
+			c.setSubtotal(p.getPprice());
 			c.setPayment_status("pending");
 			CartDAO.insertIntoCart(c);
 			response.sendRedirect("customer-home.jsp");
@@ -51,8 +52,18 @@ public class CartController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		int cart_id = Integer.parseInt(request.getParameter("cart_id"));
+		int qty = Integer.parseInt(request.getParameter("qty"));
+		System.out.println(cart_id);
+		System.out.println(qty);
+		Cart c = CartDAO.getCartByCartId(cart_id);
+		c.setCart_id(cart_id);
+		c.setQty(qty);
+		c.setTotal_price(qty*c.getPprice());
+		int subtotal = qty*c.getPprice();
+		c.setSubtotal(subtotal);
+		CartDAO.updateCart(c);
+		response.sendRedirect("cart.jsp");
 	}
 
 }

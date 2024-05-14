@@ -36,7 +36,6 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane"/>
     <fullyQualifiedTypeName name="dao.CustomerDAO"/>
     <fullyQualifiedTypeName name="model.Customer"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="model.WishList"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -44,7 +43,6 @@
     <fullyQualifiedTypeName name="controller.CartController"/>
     <fullyQualifiedTypeName name="model.Product"/>
     <fullyQualifiedTypeName name="dao.ProductDAO"/>
-    <fullyQualifiedTypeName name="model.Cart"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="connection.DBConnection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="model.Cart"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

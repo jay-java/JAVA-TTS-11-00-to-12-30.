@@ -1,7 +1,7 @@
 package model;
 
 public class Cart {
-	private int cart_id,cus_id,pid,qty,pprice,total_price;
+	private int cart_id,cus_id,pid,qty,pprice,total_price,subtotal;
 	private String payment_status;
 	
 	public int getCart_id() {
@@ -59,11 +59,21 @@ public class Cart {
 	public void setPayment_status(String payment_status) {
 		this.payment_status = payment_status;
 	}
+	
+
+	public int getSubtotal() {
+		return subtotal;
+	}
+
+	public void setSubtotal(int subtotal) {
+		this.subtotal = subtotal;
+	}
 
 	@Override
 	public String toString() {
 		return "Cart [cart_id=" + cart_id + ", cus_id=" + cus_id + ", pid=" + pid + ", qty=" + qty + ", pprice="
-				+ pprice + ", total_price=" + total_price + ", payment_status=" + payment_status + "]";
+				+ pprice + ", total_price=" + total_price + ", subtotal=" + subtotal + ", payment_status="
+				+ payment_status + "]";
 	}
 	
 }
