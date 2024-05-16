@@ -36,9 +36,7 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane"/>
     <fullyQualifiedTypeName name="dao.CustomerDAO"/>
     <fullyQualifiedTypeName name="model.Customer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="model.WishList"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="dao.WishLIstDAO"/>
     <fullyQualifiedTypeName name="controller.CartController"/>
     <fullyQualifiedTypeName name="model.Product"/>
@@ -46,7 +44,6 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="connection.DBConnection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="dao.CartDAO"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="service_for_OTP.Servicesss"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
@@ -57,7 +54,10 @@
     <fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
     <fullyQualifiedTypeName name="javax.mail.Transport"/>
     <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="model.Cart"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="model.Cart"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="dao.CartDAO"/>
 </qualifiedTypeNameHistroy>
