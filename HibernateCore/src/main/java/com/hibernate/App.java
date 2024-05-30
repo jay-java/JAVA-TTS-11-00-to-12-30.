@@ -12,13 +12,13 @@ public class App {
 		Session session = sf.openSession();
 		Transaction tx = session.beginTransaction();
 		
-//		User u1 = new User(2, "python", 987654321, "ahmedabad", "p@gmail.com", "java123");
-//		session.save(u1);
+		User u1 = new User(2, "python", 987654321, "ahmedabad", "p@gmail.com", "java123");
+		session.save(u1);
 		
 //		session.update(u1);
 		
-		User u = session.get(User.class, 2);
-		System.out.println(u);
+//		User u = session.get(User.class, 2);
+//		System.out.println(u);
 		
 		tx.commit();
 		session.close();
