@@ -43,12 +43,19 @@ public class SellerController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
 		if(action.equalsIgnoreCase("register")) {
-			Seller s = new Seller();
-			s.setName(request.getParameter("name"));
-			s.setContact(Long.parseLong(request.getParameter("contact")));
-			s.setAddress(request.getParameter("address"));
-			s.setEmail(request.getParameter("email"));
-			s.setPassword(request.getParameter("password"));
+			Seller s = new Seller(
+					Integer.parseInt(request.getParameter("id")),
+					request.getParameter("name"),
+					request.getParameter("address"),
+					request.getParameter("email"),
+					request.getParameter("password"),
+					Long.parseLong(request.getParameter("contact"))
+					);
+//			s.setName(request.getParameter("name"));
+//			s.setContact(Long.parseLong(request.getParameter("contact")));
+//			s.setAddress(request.getParameter("address"));
+//			s.setEmail(request.getParameter("email"));
+//			s.setPassword(request.getParameter("password"));
 			String email = request.getParameter("email");
 			boolean flag = SellerDAO.checkEmail(email);
 			if(flag == false){

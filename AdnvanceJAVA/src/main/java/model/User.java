@@ -5,6 +5,19 @@ public class User {
 	private String name,address,email,password;
 	private long contact;
 	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public User(int id, String name, String address, String email, String password, long contact) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.email = email;
+		this.password = password;
+		this.contact = contact;
+	}
 	public int getId() {
 		return id;
 	}
