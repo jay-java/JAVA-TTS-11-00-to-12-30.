@@ -18,6 +18,7 @@
 </head>
 <body>
 	<h1>Hello, world!</h1>
+	<div class="container">
 	<form action="create">
 		<div class="form-group">
 			<label for="exampleInputEmail1">Email address</label> <input
@@ -47,6 +48,7 @@
 		</div>
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
+	</div>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
