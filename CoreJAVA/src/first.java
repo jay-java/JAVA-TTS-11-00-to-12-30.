@@ -1,19 +1,18 @@
-class A {
-	static int o = 12;
-
-	public static void change() {
-		o++;
-		System.out.println(o);
-	}
-}
+import java.util.Scanner;
 
 public class first {
 	public static void main(String[] args) {
-		System.out.print("hello java\t");
-		System.out.println("hello java");
-		System.out.println("hello");
-		System.out.println(1 * 2);
-		A a = new A();
-		a.change();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter num : ");
+		int num = sc.nextInt();
+		int counter = 1;
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=i;j++) {
+				if(counter<=num) {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
 	}
 }
