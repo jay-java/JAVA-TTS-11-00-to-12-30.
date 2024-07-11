@@ -1,13 +1,13 @@
-package users_api;
+package com.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookRestApplication {
+public class UsersRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BookRestApplication.class, args);
+		SpringApplication.run(UsersRestApplication.class, args);
 	}
 
 }

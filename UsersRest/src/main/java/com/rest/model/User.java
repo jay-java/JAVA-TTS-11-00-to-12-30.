@@ -1,24 +1,28 @@
-package model;
+package com.rest.model;
 
-public class Users {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String name;
 	private String address;
-	private long contact;
-	public Users() {
+	
+	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	public Users(int id, String name, String address, long contact) {
+	public User(int id, String name, String address) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.address = address;
-		this.contact = contact;
 	}
-
-
 	public int getId() {
 		return id;
 	}
@@ -37,18 +41,10 @@ public class Users {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
-	public long getContact() {
-		return contact;
-	}
-
-	public void setContact(long contact) {
-		this.contact = contact;
-	}
-
 	@Override
 	public String toString() {
-		return "Users [id=" + id + ", name=" + name + ", address=" + address + ", contact=" + contact + "]";
+		return "User [id=" + id + ", name=" + name + ", address=" + address + "]";
 	}
+	
 	
 }
