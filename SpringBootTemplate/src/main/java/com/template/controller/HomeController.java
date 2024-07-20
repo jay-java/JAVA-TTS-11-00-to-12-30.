@@ -14,25 +14,12 @@ public class HomeController {
 	public String about(Model m) {
 		return "about";
 	}
-	@GetMapping("/event-details")
-	public String ED(Model m) {
-		return "event-details";
+	@GetMapping("/registerr")
+	public String register(Model m) {
+		return "register";
 	}
-	@GetMapping("/rent-venue")
-	public String RV(Model m) {
-		return "rent-venue";
+	@GetMapping("/login")
+	public String login(Model m) {
+		return "login";
 	}
-	@GetMapping("/shows-events")
-	public String SE(Model m) {
-		return "shows-events";
-	}
-	@GetMapping("/ticket-details")
-	public String TD(Model m) {
-		return "ticket-details";
-	}
-	@GetMapping("/tickets")
-	public String tickets(Model m) {
-		return "tickets";
-	}
-	
 }

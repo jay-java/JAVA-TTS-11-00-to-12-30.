@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragements/head :: head"></head>
+
+<body>
+<head th:replace="/fragements/header :: header"></head>
+
+    <div class="rent-venue-application">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="heading-text">
+                        <h4>Reservation Application</h4>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact" action="#" method="post"
+                        	th:action="@{/registerAccount}"
+                        	th:object="${account}"
+                        >
+                          <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="nameString" th:field="*{nameString}" placeholder="Your Name*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" id="emailString" th:field="*{emailString}" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="phone-number" type="text" id="contact" th:field="*{contact}" placeholder="Phone Number*" required="">
+                              </fieldset>
+                            </div>
+                              <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="phone-number" type="password" id="passwordString" th:field="*{passwordString}" placeholder="Password*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-dark-button">Register</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<footer th:replace="/fragements/footer :: footer"></footer>
+  </body>
+</html>

@@ -6,56 +6,61 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
-@Data
 public class Reservation {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
-	private String name;
-	private String email;
-	private long contact;
+	private long reservation_id;
+	private String purpose;
 	private LocalDateTime createdAt;
-	public long getId() {
-		return id;
+	
+	@ManyToOne
+	@JoinColumn(name="account_id",nullable = false)
+	private Account account;
+
+	public long getReservation_id() {
+		return reservation_id;
 	}
-	public void setId(long id) {
-		this.id = id;
+
+	public void setReservation_id(long reservation_id) {
+		this.reservation_id = reservation_id;
 	}
-	public String getName() {
-		return name;
+
+	public String getPurpose() {
+		return purpose;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public void setPurpose(String purpose) {
+		this.purpose = purpose;
 	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public long getContact() {
-		return contact;
-	}
-	public void setContact(long contact) {
-		this.contact = contact;
-	}
+
 	public LocalDateTime getCreatedAt() {
 		return createdAt;
 	}
+
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
-	@Override
-	public String toString() {
-		return "Reservation [id=" + id + ", name=" + name + ", email=" + email + ", contact=" + contact + ", createdAt="
-				+ createdAt + "]";
+
+	public Account getAccount() {
+		return account;
 	}
 
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	@Override
+	public String toString() {
+		return "Reservation [reservation_id=" + reservation_id + ", purpose=" + purpose + ", createdAt=" + createdAt
+				+ ", account=" + account + "]";
+	}
 	
+
 }
