@@ -9,8 +9,8 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="consAmbiguity.Data" name="d1">
-		<constructor-arg value = "1" type="int"/>
-		<constructor-arg value = "2" type="int"/>
+		<constructor-arg value = "1" type="int" index="1"/>
+		<constructor-arg value = "2" type="int" index="0"/>
 	</bean>
 
 </beans>
